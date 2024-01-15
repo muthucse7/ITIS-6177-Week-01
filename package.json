@@ -1,0 +1,13 @@
+{
+  "name": "itis-6177-week-01",
+  "version": "1.0.0",
+  "description": "ITIS-6177 System Integration Assignment test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Muthu Selvam",
+  "license": "ISC"
+}
