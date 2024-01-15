@@ -4,7 +4,9 @@
   "description": "ITIS-6177 System Integration Assignment test",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "docker-build": "docker build -t node-hello-world .",
+    "docker-run": "docker run -p 3000:3000 -d node-hello-world"
   },
   "keywords": [],
   "author": "Muthu Selvam",
