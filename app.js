@@ -1,12 +1,14 @@
-const http = require('http');
-const port = process.env.PORT || 3000;
+// Import the express
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  const msg = 'Hello World!\n'
-  res.end(msg);
+// Configure the application port
+const PORT = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World from express and node js!');
 });
 
-server.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}/`);
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}/`);
 });
