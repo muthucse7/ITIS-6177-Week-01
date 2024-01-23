@@ -1,0 +1,40 @@
+ssh root@157.230.88.168
+sudo ufw allow 80
+sudo apt update
+sudo apt install nginx
+http://157.230.88.168/
+nano test.html
+=====================================
+test.html, index.html
+====================================
+apt install epel-release apt-utils -y
+apt install nginx -y
+systemctl start nginx
+systemctl enable nginx
+apt install firewalld -y
+systemctl start firewalld
+systemctl enable firewalld
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --zone=public --add-port=3000/tcp --permanent
+firewall-cmd --zone=public --add-port=3001/tcp --permanent
+firewall-cmd --reload
+cd /usr/share/nginx/html
+nano test.html
+Type the code shown in this slide
+Go to your browser and open
+http://157.230.88.168/test.html
+
+=====================================
+server.js
+====================================
+curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+apt install nodejs -y
+cd /usr/share/nginx
+vi server.js
+Type the code shown in this slide - server.js
+npm install express
+npm install -g pm2
+pm2 start server.js
+Go to the browser and open the IP address plus 3000
+http://157.230.88.168/:3000
