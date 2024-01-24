@@ -38,3 +38,14 @@ npm install -g pm2
 pm2 start server.js
 Go to the browser and open the IP address plus 3000
 http://157.230.88.168/:3000
+
+=======================
+sudo service nginx restart
+pm2 kill
+
+========================
+Submission:
+NGinx server: http://157.230.88.168/
+NodeJS server: http://157.230.88.168/:3000
+
+
