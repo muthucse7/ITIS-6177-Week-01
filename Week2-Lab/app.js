@@ -2,9 +2,13 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const cors = require('cors');
 
 // Configure the application port
 const PORT = 3000;
+
+// Enable CORS for all routes
+app.use(cors());
 
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname + "/html/test.html"));
